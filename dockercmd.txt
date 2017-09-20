@@ -1,1 +1,3 @@
 ﻿start run exec build commit ps rm 
+
+system prune
