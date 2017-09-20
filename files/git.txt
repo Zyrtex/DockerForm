@@ -9,3 +9,7 @@ git remote add origin git@ip_server:file.git
  git push --set-upstream origin master
 
  git clone git@ip_server:file.git
+ git fetch 
+ git diff FETCH_HEAD
+ git merge
+ git pull 
