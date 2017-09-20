@@ -5,3 +5,7 @@ git commit -am "Comment"
 git init --bare file.git
 plink git@server_ip
 
+git remote add origin git@ip_server:file.git
+ git push --set-upstream origin master
+
+ git clone git@ip_server:file.git
