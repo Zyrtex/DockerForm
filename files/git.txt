@@ -1,0 +1,7 @@
+﻿git add file
+git commit -m "comment"
+git commit -am "Comment"
+
+git init --bare file.git
+plink git@server_ip
+
