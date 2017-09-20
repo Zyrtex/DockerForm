@@ -4,4 +4,15 @@
 - Hello WORLD
 - Création container
 - Dockerfile
-...
+- installation et conf serveur apache
+- ports docker
+- volume
+
+
+Git init
+Git add git commit
+git log
+status
+
+
+send help
