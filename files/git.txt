@@ -27,3 +27,4 @@ git remote add origin git@ip_server:file.git
 
 
  modification master en meme temps que branche
+ on peut fusionner en reintegrant l'ensemble des commits de dev sur master
