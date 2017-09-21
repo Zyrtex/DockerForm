@@ -24,3 +24,6 @@ git remote add origin git@ip_server:file.git
 
  git merge dev
  git branch -d dev
+
+
+ modification master en meme temps que branche
