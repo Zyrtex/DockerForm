@@ -16,3 +16,9 @@ git remote add origin git@ip_server:file.git
  
  git checkout
  git reset --hard <commit>
+
+ git branch -b dev
+ git checkout <branch>
+
+ git merge dev
+ git branch -d dev
