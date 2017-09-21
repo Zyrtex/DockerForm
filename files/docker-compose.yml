@@ -1,7 +1,7 @@
 ﻿version: "3"
 services: 
   bdd: 
-    image: mariadb:latest
+    image: pierre/mariadb
     volumes:
       - mysqlpersist:/var/lib/mysqlpersist
     environment:
