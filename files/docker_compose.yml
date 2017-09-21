@@ -1,0 +1,10 @@
+﻿version: "3"
+services: 
+  bdd: 
+    image: mariadb:latest
+    volumes:
+      - mysqlpersist:/var/lib/mysqlpersist
+    environment:
+      MYSQL_ROOT_PASSWORD: stage123
+  client:
+    image: pierre/mariadbclient
