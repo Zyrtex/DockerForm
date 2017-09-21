@@ -15,8 +15,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - phppersist:/var/lib/phpmyadmin
+      - drupal_data:/drupal_data
 
 volumes:
   mysqlpersist:
   phppersist:
+  drupal_data:
