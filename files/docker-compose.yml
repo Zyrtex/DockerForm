@@ -24,8 +24,10 @@ services:
       - sites_persist:/var/www/html/sites
   php:
     image: php:7.0-apache
-    ports: "8081:80"
-    volumes: /root/formation/formation/files:/var/www/html
+    ports: 
+      - "8081:80"
+    volumes: 
+      - /root/formation/formation/files:/var/www/html
 
 volumes:
   mysqlpersist:
