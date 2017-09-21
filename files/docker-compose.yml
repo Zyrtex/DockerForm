@@ -28,6 +28,10 @@ services:
       - "8081:80"
     volumes: 
       - /root/formation/formation/files:/var/www/html
+  nginx-fpm:
+    image: richarvey/nginx-php-fpm
+    ports:
+      - "8082:80"
 
 volumes:
   mysqlpersist:
