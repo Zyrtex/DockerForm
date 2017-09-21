@@ -1,0 +1,15 @@
+version: "3"
+services: 
+  mariadb:
+    image: pierre/mariadb
+    volumes:
+      - mysqlpersist:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: stage123
+  phpmyadmin: 
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "80:80"
+
+volumes:
+  mysqlpersist:
