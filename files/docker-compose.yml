@@ -15,9 +15,18 @@ services:
     ports:
       - "80:80"
     volumes:
-      - drupal_data:/drupal_data
+      - modules_persist:/var/www/html/modules
+      - profiles_persist:/var/www/html/profiles
+      - themes_persist:/var/www/html/themes
+      # this takes advantage of the feature in Docker that a new anonymous
+      # volume (which is what we're creating here) will be initialized with the
+      # existing content of the image at the same location
+      - sites_persist:/var/www/html/sites
 
 volumes:
   mysqlpersist:
   phppersist:
-  drupal_data:
+  modules_persist:
+  profiles_persist:
+  themes_persist:
+  sites_persist:
