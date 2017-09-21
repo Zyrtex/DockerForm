@@ -9,7 +9,11 @@ services:
   phpmyadmin: 
     image: phpmyadmin/phpmyadmin
     ports:
-      - "80:80"
+      - "8080:8080"
+  drupal:
+    image: drupal
+    ports:
+      - "81:81"
 
 volumes:
   mysqlpersist:
