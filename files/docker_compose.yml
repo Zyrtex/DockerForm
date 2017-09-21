@@ -8,3 +8,6 @@ services:
       MYSQL_ROOT_PASSWORD: stage123
   client:
     image: pierre/mariadbclient
+
+volumes: 
+  mysqlpersist:
