@@ -2,8 +2,6 @@
 git commit -m "comment"
 git commit -am "Comment"
 
-####################################################
-
 git init --bare file.git
 plink git@server_ip
 
@@ -15,18 +13,7 @@ git remote add origin git@ip_server:file.git
  git diff FETCH_HEAD
  git merge
  git pull 
- #########################G
- git checkout
- git reset --hard <commit>
-
- git branch -b dev
- git checkout <branch>
-
- git merge dev
- git branch -d dev
 
 
- modification master en meme temps que branche
- on peut fusionner en reintegrant l'ensemble des commits de dev sur master
-
- et du coup on peut pusher sur le serveur
+git reset
+git 
